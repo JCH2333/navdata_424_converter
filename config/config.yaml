@@ -1,0 +1,46 @@
+# 项目配置
+
+# 数据路径
+424_data_path: "F:/我的世界动画/AI项目/导航数据/424源数据/2608/2608"
+reference_path: "F:/我的世界动画/AI项目/导航数据/424源数据/2608"
+
+# AIRAC周期
+airac_cycle: "2608"
+
+# 输出设置
+output_dir: "./output"
+enable_compression: true
+
+# 日志设置
+log_level: "INFO"
+log_file: "./logs/converter.log"
+
+# 验证设置
+enable_validation: true
+strict_mode: false
+
+# 格式特定配置
+formats:
+  default:
+    sdk_path: ""  # MSFS SDK路径
+    target_path: "F:/games/community"
+
+  pmdg:
+    aircraft:
+      - "pmdg-aircraft-737"
+      - "pmdg-aircraft-738"
+      - "pmdg-aircraft-77f"
+      - "pmdg-aircraft-77w"
+    target_path: "F:/games/FlightSimulator2024/Packages"
+
+  fslabs:
+    target_path: "C:/Users/Administrator/AppData/Roaming/FSLabs_NavData/NavData"
+
+  tfdi:
+    target_path: ""
+
+  ifly:
+    target_path: ""
+
+  fenix:
+    target_path: ""

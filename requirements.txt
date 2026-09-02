@@ -1,0 +1,25 @@
+# 核心依赖
+pandas>=2.0.0
+numpy>=1.24.0
+
+# 数据处理
+pydantic>=2.0.0
+
+# 命令行工具
+click>=8.1.0
+rich>=13.0.0
+
+# 测试
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# 代码质量
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.4.0
+
+# 日志
+loguru>=0.7.0
+
+# 配置文件
+pyyaml>=6.0.0

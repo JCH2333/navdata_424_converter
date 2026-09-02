@@ -1,0 +1,100 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 测试
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 数据库文件（不提交）
+*.db
+*.db3
+*.s3db
+*.sqlite
+*.sqlite3
+*.rom
+
+# 日志文件
+*.log
+*.log.*
+
+# 备份文件
+backups/
+*.bak
+*.backup
+
+# 输出文件
+output/
+build-output/
+candidate-*/
+functional-test-*/
+
+# 外部测试包
+external-test-packages/
+external-c-drive-*/
+
+# 诊断数据
+diagnostics/
+
+# 临时文件
+temp/
+tmp/
+*.tmp
+
+# 压缩文件
+*.zip
+*.tar.gz
+*.rar
+
+# BGL文件
+*.bgl
+*.xml.bak
+
+# 元数据临时文件
+cycle.json.bak
+manifest.json.bak
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# 中间模型文件（大文件）
+*.json.gz
+intermediate-*.json
+
+# 构建产物
+*.pyc
+*.pyo
