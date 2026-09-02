@@ -300,10 +300,12 @@
 
 - **R001项目初始化已完成** ✓
 - **R002 424解析器基础已完成** ✓
+- **R003 统一NavModel设计已完成** ✓
 - Git仓库已建立并推送到GitHub：https://github.com/JCH2333/navdata_424_converter
 - 项目基础架构就绪
 - 424解析器核心功能完成（机场/跑道/NDB）
-- 下一步：R003 - 统一NavModel设计
+- NavModel中间模型完成（转换/验证/序列化）
+- 下一步：R004 - CLI框架完善
 
 ## 已完成的里程碑
 
@@ -321,28 +323,36 @@
 - 完成NDB解析器（77个导航台）
 - 所有测试通过
 
-## 短期计划：R003 统一NavModel设计（下一步）
+### R003：统一NavModel设计 ✓
+- 设计并实现NavModel核心类
+- 实现坐标解析（紧凑格式→十进制）
+- 实现NavModelConverter转换器
+- 实现NavModelValidator验证器
+- 实现NavModelSerializer序列化器
+- 测试全部通过（0错误）
+
+## 短期计划：R004 CLI框架完善（下一步）
 
 ### 目标
-- 定义跨格式的统一中间数据模型
-- 实现模型序列化/反序列化
-- 建立模型验证规则
-- 支持模型持久化
+- 集成NavModel到CLI
+- 实现完整的转换流程
+- 添加进度显示
+- 完善错误处理
 
 ### 任务清单
-- [ ] 设计NavModel核心类结构
-- [ ] 实现Airport/Runway/Navaid模型类
-- [ ] 实现Waypoint/Airway模型类
-- [ ] 实现Procedure模型类（SID/STAR/IAP）
-- [ ] 添加模型验证器
-- [ ] 实现JSON序列化
-- [ ] 编写模型测试
+- [ ] 更新main.py集成NavModel
+- [ ] 实现convert命令完整流程
+- [ ] 添加进度条显示
+- [ ] 实现验证命令
+- [ ] 添加详细日志输出
+- [ ] 编写CLI测试
+- [ ] 更新README使用说明
 - [ ] Git提交和推送
 
 ### 预期产出
-- 完整的NavModel类库
-- 模型验证框架
-- JSON序列化支持
+- 可用的端到端转换命令
+- 友好的用户界面
+- 完整的错误提示
 
 ## 开发规则
 
